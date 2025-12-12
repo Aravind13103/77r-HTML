@@ -4,40 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body{
-            font-family: sans-serif;
-            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            background: linear-gradient(135deg, #000000, #460101);
+            color: #f2f2f2;
         }
-        #headings, #para{
+        #headings{
             text-align: center;
-            color: rgb(111, 203, 5);
+            color: #e50914;                                       
+            text-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
         }
-        #main{
-            border: 2px solid black;
-            display: inline-flex;
-            padding: 10px;
-            gap: 10px;    
-            margin-right: 1000px;     
+        #para{
+            text-align: center;
+            font-size: 18px;
+            color: #ff4d4d; 
+            font-weight: 300;
+        }
+        #main {
+            max-width: 960px;             /* keeps it a reasonable width on large screens */
+            margin: 18px auto;            /* centers the bordered box horizontally */
+            padding: 12px;                /* inside space so images don't touch the border */
+            display: flex;                /* make children align in a row */
+            flex-wrap: wrap;              /* allow items to wrap onto next line */
+            gap: 19px;                    /* space between items */
+            justify-content: center;      /*center items horizontally inside the box*/
+            border: px solid rgba(255, 0, 0, 0.35);             /* Netflix red tint*/
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.18); 
         }
 
-        .movies{
-            /* border: 2px solid green; */
-            padding: 10px;
-            text-align: center; 
-            margin-bottom: 10px;  
-            width: 100px; 
-            /* height: 150px; */
+        .movies {
+            width: 100px;                
+            text-align: center;
+            padding: 7px;
+            border-radius: 14px;
+            box-shadow: 0 0 50px rgba(229, 9, 20, 0.15);
+            transition: 0.25s ease-in-out;
+        }
+        .movies img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(255, 10, 10, 0.4);
+        }
+        .movies p {
+            color: #ffe7e7;     
+            font-weight: 300;
+            letter-spacing: 0.2px;
+        }
+        /* On hover */
+        .movies:hover {
+            border-color: #00ffbb;
+            transform:translateY(-3px);
+            box-shadow: 0 0 8px rgba(255, 10, 10, 0.4);
         }
 
     </style>
 </head>
 <body>
     <h1 id="headings">Naa Songs</h1>
-    <p id="para">Telugu Songs <u>Download<u></p>
+    <p id="para">Telugu Songs Download</p>
 
     <div id="main">
-        <div id="row">
             <div class="movies">
                 <a href="./mirai.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/10/Mirai-2025-Sri-Rama-Sambhavam-250x250.jpg" alt="Mirai" width="100"></a>
                 <p>Mirai</p>
@@ -54,194 +88,51 @@
             </div>
 
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/09/The-Girlfriend-2025-Em-Jaruguthondhi-250x250.jpg" alt="The Girl friend" width="100">
+                <a href="./girlfriend.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/09/The-Girlfriend-2025-Em-Jaruguthondhi-250x250.jpg" alt="The Girl friend" width="100"></a>
                 <p>The Girl friend</p>
             </div>
-        </div>
 
-
-        <div id="row">
             <div class="movies">
                 <a href="./beauty.html"><img  src="https://www.naasongs.co/wp-content/uploads/2025/09/Beauty-2025-250x250.jpg" alt="Beaty" width="100"></a>
                 <p>Beauty</p>
             </div>
 
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/10/They-Call-Him-OG-2025-Kiss-Kiss-Bang-Bang-250x250.jpg" alt="OG" width="100">
+                <a href="./og.html"><img src="https://naasongs.com.co/wp-content/uploads/2025/08/Pawan-Kalyan-OG-Movie-Songs-Download-Naa-Songs-OG-Naa-Songs-They-Call-Him-OG-Mp3-S-Thaman.jpg" alt="OG" width="100"></a>
                 <p>OG</p>
             </div>
 
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Sir-Madam-Telugu-2025-250x250.jpg" alt="Sir madam" width="100">
+                <a href="./sir_madam.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/09/Sir-Madam-Telugu-2025-250x250.jpg" alt="Sir madam" width="100"></a>
                 <p>Sir madam</p>
             </div>
 
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Little-Hearts-Telugu-2025-250x250.jpg" alt="little Hearts" width="100">
+                <a href="./little_hearts.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/09/Little-Hearts-Telugu-2025-250x250.jpg" alt="little Hearts" width="100"></a>
                 <p>Little Hearts</p>
             </div>
-        </div>
 
-
-        <div id="row">
             <div class="movies">
                 <a href="./kingdom.html"> <img src="https://www.naasongs.co/wp-content/uploads/2025/08/Kingdom-Telugu-2025-Ragile-Ragile-250x250.jpg" alt="Kingdom" width="100"></a>
                 <p>Kingdom</p>
             </div>
+
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/07/Hari-Hara-Veera-Mallu-2025-Salasala-Marige-250x250.jpg" alt="Hari hara veer mallu" width="100">
-                <p>Hari hara vil..</p>
+                <a href="./HHVM.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/07/Hari-Hara-Veera-Mallu-2025-Salasala-Marige-250x250.jpg" alt="Hari hara veer mallu" width="100"></a>
+                <p>Hari hara vee..</p>
             </div>
+
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Ari-2025-Lets-Do-Some-Crazy-Party-250x250.jpg" alt="Ari" width="100">
+                <a href="./ari.html"><img src="https://www.naasongs.co/wp-content/uploads/2025/10/Ari-2025-Lets-Do-Some-Crazy-Party-250x250.jpg" alt="Ari" width="100"></a>
                 <p>Ari</p>
             </div>
 
             <div class="movies">
-                <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Thamma-2025-Tum-Mere-Na-Huye-250x250.jpg" alt="Thamma" width="100">
+                <a href="./thamma.html"><img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thamma-et00443268-1764609150.jpg" alt="Thamma" width="100"></a>
                 <p>Thamma</p>
             </div>
-        </div>
     </div>
-
-    
 </body>
 </html>
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naa Songs Gallery</title>
-    <style>
-        /* General Page Styling */
-        body {
-            font-family: Arial, sans-serif; /* Added a font for better readability */
-        }
-
-        #headings, #para {
-            text-align: center;
-            color: black;
-            margin: 10px 0;
-        }
-
-        /* GRID LAYOUT 
-           This replaces the manual "rows". 
-           It tells the browser to create 4 equal columns.
-        */
-        #main {
-            border: 2px solid black;
-            padding: 20px;
-            
-            /* Enable Grid */
-            display: grid; 
-            
-            /* Create 4 columns of equal width */
-            grid-template-columns: repeat(4, 1fr); 
-            
-            /* Space between items */
-            gap: 20px; 
-            
-            /* Center the grid on the page (optional) */
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        /* MOVIE CARD STYLING
-           Changed from 'id' to 'class' because there are multiple movies.
-        */
-        .movie-card {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ddd; /* Light border for definition */
-            border-radius: 8px;     /* Rounded corners */
-            background-color: #f9f9f9;
-        }
-
-        .movie-card img {
-            border-radius: 5px;
-            max-width: 100%; /* Ensures image stays inside the card */
-            height: auto;
-        }
-
-        .movie-card p {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-    </style>
-</head>
-<body>
-
-    <h1 id="headings">Naa Songs</h1>
-    <p id="para">Telugu Songs Download</p>
-
-    <div id="main">
-        
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Mirai-2025-Sri-Rama-Sambhavam-250x250.jpg" alt="Mirai" width="100">
-            <p>Mirai</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Mana-ShankaraVaraprasad-Garu-Pandagaki-Vasthunnaru-2025-Meesaala-Pilla-250x250.jpg" alt="Meesala Pilla" width="100">
-            <p>Mana Varaprasad</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Coolie-2025-250x250.jpg" alt="Coolie" width="100">
-            <p>Coolie</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/09/The-Girlfriend-2025-Em-Jaruguthondhi-250x250.jpg" alt="The Girl friend" width="100">
-            <p>The Girl Friend</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Beauty-2025-250x250.jpg" alt="Beauty" width="100">
-            <p>Beauty</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/10/They-Call-Him-OG-2025-Kiss-Kiss-Bang-Bang-250x250.jpg" alt="OG" width="100">
-            <p>OG</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Sir-Madam-Telugu-2025-250x250.jpg" alt="Sir madam" width="100">
-            <p>Sir Madam</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/09/Little-Hearts-Telugu-2025-250x250.jpg" alt="Little Hearts" width="100">
-            <p>Little Hearts</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/08/Kingdom-Telugu-2025-Ragile-Ragile-250x250.jpg" alt="Kingdom" width="100">
-            <p>Kingdom</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/07/Hari-Hara-Veera-Mallu-2025-Salasala-Marige-250x250.jpg" alt="Hari hara veera mallu" width="100">
-            <p>Hari Hara Veera Mallu</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Ari-2025-Lets-Do-Some-Crazy-Party-250x250.jpg" alt="Ari" width="100">
-            <p>Ari</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="https://www.naasongs.co/wp-content/uploads/2025/10/Thamma-2025-Tum-Mere-Na-Huye-250x250.jpg" alt="Thamma" width="100">
-            <p>Thamma</p>
-        </div>
-
-    </div>
-
-</body>
-</html> -->
