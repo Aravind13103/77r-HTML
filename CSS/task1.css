@@ -1,0 +1,23 @@
+.container{
+    /* border: 2px solid black; */
+    /* width: 1000px; */
+    /* height: 1000px; */
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center; 
+    
+}
+
+.child{
+    /* border: 2px solid red; */
+    width: 270px;
+    /* height: 300px; */
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top; 
+    /* text-align: center; */
+}
+
+img{
+    width: 100%;
+}
