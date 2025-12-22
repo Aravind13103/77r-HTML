@@ -1,0 +1,21 @@
+
+.container{
+    width: 1250px;
+   
+}
+.child{
+    position: absolute;
+    top: 335px;
+    left: 550px;
+}
+img{
+    width: 100%;;
+}
+h2{
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
