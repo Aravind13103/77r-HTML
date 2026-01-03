@@ -9,19 +9,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     background-color: black;
     height: 300px;
-    width: 50%;
+    width: 100%;
 }
 .bars{
     height: 100px;
     width: 10px;
     border: black solid 1px;
     background-color: #ff0000;
+    flex-shrink: 0;
     border-radius: 5px;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+
 }
 
 .bar1{
