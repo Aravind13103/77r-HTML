@@ -1,0 +1,13 @@
+.main {
+    background-color: #6F2CF4;
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+.item {
+    border: 2px solid maroon ;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}

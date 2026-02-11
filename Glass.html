@@ -1,0 +1,79 @@
+
+<html>
+<label class="apple-liquid-toggle">
+  <input type="checkbox" checked>
+  <span class="glass-track">
+    <span class="knob"></span>
+  </span>
+</label>
+
+<style>
+:root {
+  --apple-green: rgba(52, 199, 89, 0.85); /* Apple's signature Green */
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+}
+
+.apple-liquid-toggle {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+}
+
+.apple-liquid-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The Track (The Glass Case) */
+.glass-track {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--glass-bg);
+  
+  /* The "Liquid" Effect */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  
+  border-radius: 32px;
+  /* 1px Internal Border for the Fresnel effect */
+  border: 0.5px solid var(--glass-border);
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+}
+
+/* The Knob (The Liquid Bead) */
+.knob {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 2px;
+  bottom: 1.5px;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+  border-radius: 50%;
+  transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /*Bouncy Apple feel*/
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 
+              0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Active State: The Green Glow */
+input:checked + .glass-track {
+  background-color: var(--apple-green);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Slide the knob */
+input:checked + .glass-track .knob {
+  transform: translateX(26px);
+}
+
+/* Interaction: Slight shrink on click to feel "Liquid" */
+.apple-liquid-toggle:active .knob {
+  width: 32px; /* Stretches slightly like a liquid drop */
+}
+</style>
+</html>

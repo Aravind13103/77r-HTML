@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bus Pass Application - Beginner</title>
+  <style>
+    /*
+      Simple internal CSS with short comments to help beginners understand.
+      1. Rules apply from top to bottom.
+      2. Selectors: element (body), class (.card), id (#name).
+    */
+
+    /* Basic page spacing and readable font */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;               /* space around the whole page */
+      background: #ffffff;        /* white background */
+      color: #222;                /* default text color */
+    }
+
+    /* Container to keep content centered and not too wide */
+    .page {
+      max-width: 900px;          /* limit width for readability */
+      margin: 0 auto;            /* center horizontally */
+    }
+
+    /* Simple header with title */
+    header {
+      text-align: center;
+      padding: 12px 10px;
+      background: #e6f0ff;       /* light blue band */
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    /* Large title */
+    .title-large {
+      color: #0837b8;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 4px 0;
+    }
+
+    /* Card: a white box with subtle border and padding */
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 14px;
+    }
+
+    /* Grid: two columns on wide screens, one column on small screens */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* two equal columns */
+      gap: 12px;
+    }
+
+    /* Make grid single column on small screens */
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+      .title-large { font-size: 18px; }
+    }
+
+    /* Simple form element styles */
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .actions {
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    button {
+      background: #2b87c9;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="title-large">GENERAL BUS PASS APPLICATION</div>
+      <div>Telangana State Road Transport Corporation</div>
+    </header>
+
+    <div class="card">
+      <!-- short comment: the form below is kept minimal so beginners can read it easily -->
+      <form>
+        <div class="grid">
+          <!-- Left column -->
+          <div>
+            <label for="name">Name *</label>
+            <input id="name" type="text" maxlength="50" placeholder="Enter full name">
+
+            <label for="dob" style="margin-top:10px;">Date of birth *</label>
+            <input id="dob" type="date">
+
+            <label for="photo" style="margin-top:10px;">Photo</label>
+            <input id="photo" type="file">
+          </div>
+
+          <!-- Right column -->
+          <div>
+            <label for="father">Father's / Guardian's Name *</label>
+            <input id="father" type="text" placeholder="Father or guardian name">
+
+            <label style="margin-top:10px;">Gender *</label>
+            <!-- simple radio buttons for gender -->
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label style="margin-left:10px;"><input type="radio" name="gender" value="male"> Male</label>
+
+            <label for="email" style="margin-top:10px;">E-mail Id *</label>
+            <input id="email" type="email" placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
