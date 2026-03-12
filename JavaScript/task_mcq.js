@@ -113,3 +113,69 @@
 // }
 // beginTask()
 
+//--------------------------
+// 11-02-2026 TASK
+//--------------------------
+
+// 1. How would you define a function that takes two numbers as parameters and returns their sum?
+
+// function sum(a, b) {
+//     return a + b
+// }
+// console.log(sum(10,11));
+
+// 2. If you define a function that accepts a string as a parameter, how would you modify it to print the string in uppercase?
+
+// function upper(name) {
+//     return name.toUpperCase()
+// }
+// console.log(upper("preeti"));
+
+//3. In JavaScript, what happens if you pass an undefined value as an argument to a function that expects a parameter?
+
+// function undef(name) {
+//     return name
+// }
+// console.log(undef(a));
+// var a;
+
+// 4. Suppose you have a function that takes an array as a parameter. How would you check inside the function if the array is empty?
+
+// function empty_array(arr) {
+//     if(arr.length === 0) {
+//         return "array is empty"
+//     }
+//     else {
+//         return "Not empty"
+//     }
+// }
+// arr1 = [2,4]
+// console.log(empty_array(arr1));
+// arr2 = []
+// console.log(empty_array(arr2));
+
+// 5. write a function that takes two numbers as parameters and returns their difference.
+
+// function diff(num1, num2) {
+//     return num1-num2
+// }
+// console.log(diff(10,2));
+
+// 6. Define a function that accepts a name and age as parameters, and returns a string with a greeting like "Hello, [name]! You are [age] years old."
+
+// function greetings(name, age) {
+//     console.log(`Hello, ${name}! You are ${age} years old.`);
+// }
+// greetings("Aravind", "22");
+
+
+// 7. Write a function that takes a number as a parameter and returns true if the number is a even number, otherwise false.
+
+// function even(num) {
+//     if (num % 2 === 0) {
+//         return "True"
+//     }
+//     return "False"
+// }
+// console.log(even(22));
+
