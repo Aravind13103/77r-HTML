@@ -1,8 +1,9 @@
 let table = document.createElement("table")
 document.body.appendChild(table)
-table.style.border = "2px red solid"
+table.style.border = "2px white solid"
 table.style.textAlign = "center"
 table.style.margin = "40px auto"
+table.style.color="white"
 // table.style.fontWeight = "bold"
 
 
@@ -11,8 +12,11 @@ let tr1 = document.createElement("tr")
 
 //Row 1 Data
 let tr1d1 = document.createElement("td")
-tr1d1.innerText = " IN ఇండియా"
+tr1d1.innerText = " IN ఇండియా 🏆"
 tr1d1.colSpan = 3
+
+
+
 let tr1d2 = document.createElement("td")
 tr1d2.innerText = "NZ న్యూజీలాండ్"
 tr1d2.colSpan = 3
@@ -25,6 +29,8 @@ let tr2 = document.createElement("tr");
 let tr2d1 = document.createElement("td")
 tr2d1.innerHTML = "నరేంద్ర మోడీ స్టేడియమ్, అహ్మదాబాద్"
 tr2d1.colSpan = 6
+tr2d1.style.color = "white"
+tr2d1.style.backgroundColor = "darkblue"
 tr2.appendChild(tr2d1)
 
 //Row 3
@@ -36,7 +42,8 @@ tr3d1.innerHTML = "🏏 255-5"
 tr3d2.innerHTML = "159 🏏"
 tr3d1.colSpan = 3
 tr3d2.colSpan = 3
-
+tr3d1.style.backgroundColor = "hotpink"
+tr3d2.style.backgroundColor = "hotpink"
 tr3.append(tr3d1,tr3d2)
 
 
@@ -48,6 +55,7 @@ data4.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
     tr4.appendChild(data)
+    // tr4.style.backgroundColor = "white"
 });
 
 // let tr4d1 = document.createElement("td")
@@ -156,6 +164,9 @@ tr8d1.innerHTML = "⚾ 20 ఓవర్లు"
 tr8d2.innerHTML = "19 ఓవర్లు ⚾"
 tr8d1.colSpan = 3
 tr8d2.colSpan = 3
+tr8d1.style.backgroundColor = "hotpink"
+tr8d2.style.backgroundColor = "hotpink"
+
 tr8.append(tr8d1,tr8d2)
 
 // Row 9
@@ -269,7 +280,10 @@ let tr13 = document.createElement("tr");
 let tr13d1 = document.createElement("td")
 tr13d1.innerHTML = "నరేంద్ర మోడీ స్టేడియమ్, అహ్మదాబాద్"
 tr13d1.colSpan = 6
+tr13d1.style.backgroundColor = "blueviolet"
+
 tr13.appendChild(tr13d1)
+
 
 
 
