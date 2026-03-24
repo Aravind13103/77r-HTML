@@ -3,7 +3,7 @@ document.body.appendChild(table)
 table.style.border = "2px white solid"
 table.style.textAlign = "center"
 table.style.margin = "40px auto"
-table.style.color="white"
+table.style.color = "white"
 // table.style.fontWeight = "bold"
 
 
@@ -21,7 +21,7 @@ let tr1d2 = document.createElement("td")
 tr1d2.innerText = "NZ న్యూజీలాండ్"
 tr1d2.colSpan = 3
 
-tr1.append(tr1d1,tr1d2)
+tr1.append(tr1d1, tr1d2)
 
 //Row 2
 let tr2 = document.createElement("tr");
@@ -44,13 +44,13 @@ tr3d1.colSpan = 3
 tr3d2.colSpan = 3
 tr3d1.style.backgroundColor = "hotpink"
 tr3d2.style.backgroundColor = "hotpink"
-tr3.append(tr3d1,tr3d2)
+tr3.append(tr3d1, tr3d2)
 
 
 //Row 4
 let tr4 = document.createElement("tr")
 
-let data4 = ["శాంసన్",89,46,"సీఫర్ట్",46,46]
+let data4 = ["శాంసన్", 89, 46, "సీఫర్ట్", 46, 46]
 data4.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
@@ -76,7 +76,7 @@ data4.forEach(element => {
 //Row 5
 let tr5 = document.createElement("tr")
 
-let data5 = ["కిషన్",54,25,"శాంట్నర్",43,35]
+let data5 = ["కిషన్", 54, 25, "శాంట్నర్", 43, 35]
 data5.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
@@ -104,7 +104,7 @@ data5.forEach(element => {
 
 let tr6 = document.createElement("tr")
 
-let data6 = ["అభిషేక్",52,22,"మిచెల్",17,7]
+let data6 = ["అభిషేక్", 52, 22, "మిచెల్", 17, 7]
 data6.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
@@ -130,7 +130,7 @@ data6.forEach(element => {
 //Row 7
 let tr7 = document.createElement("tr")
 
-let data7 = ["దూబే","26*",8,"అలెన్",9,7]
+let data7 = ["దూబే", "26*", 8, "అలెన్", 9, 7]
 data7.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
@@ -167,12 +167,12 @@ tr8d2.colSpan = 3
 tr8d1.style.backgroundColor = "hotpink"
 tr8d2.style.backgroundColor = "hotpink"
 
-tr8.append(tr8d1,tr8d2)
+tr8.append(tr8d1, tr8d2)
 
 // Row 9
 let tr9 = document.createElement("tr")
 
-let data9 = ["నీషం","2-46","4","బుమ్రా","4-15","4"]
+let data9 = ["నీషం", "2-46", "4", "బుమ్రా", "4-15", "4"]
 data9.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
@@ -199,8 +199,8 @@ data9.forEach(element => {
 // Row 10
 let tr10 = document.createElement("tr")
 
-let data10 = ["రవీంద్ర","1-32","2","అక్షర్","3-27","3"]
-data10.forEach(element=>{
+let data10 = ["రవీంద్ర", "1-32", "2", "అక్షర్", "3-27", "3"]
+data10.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
     tr10.appendChild(data)
@@ -225,8 +225,8 @@ data10.forEach(element=>{
 // Row 11
 let tr11 = document.createElement("tr")
 
-let data11 = ["హెన్రీ","1-49","4","అభిషేక్","1-5","1"]
-data11.forEach(element=>{
+let data11 = ["హెన్రీ", "1-49", "4", "అభిషేక్", "1-5", "1"]
+data11.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
     tr11.appendChild(data)
@@ -252,8 +252,8 @@ data11.forEach(element=>{
 // Row 12
 let tr12 = document.createElement("tr")
 
-let data12 = ["--","--","--","హార్దిక్","1-36","4"]
-data12.forEach(element=>{
+let data12 = ["--", "--", "--", "హార్దిక్", "1-36", "4"]
+data12.forEach(element => {
     let data = document.createElement("td")
     data.innerText = element
     tr12.appendChild(data)
@@ -282,13 +282,8 @@ tr13d1.innerHTML = "నరేంద్ర మోడీ స్టేడియమ�
 tr13d1.colSpan = 6
 tr13d1.style.backgroundColor = "blueviolet"
 
-tr13.appendChild(tr13d1)
 
-
-
-
-
-table.append(tr1,tr2,tr3,tr4,tr5,tr6,tr7,tr8,tr9,tr10,tr11,tr12,tr13)
+table.append(tr1, tr2, tr3, tr4, tr5, tr6, tr7, tr8, tr9, tr10, tr11, tr12, tr13)
 
 
 // Table styling
