@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full page styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(140deg, #000000, #e9ff7c, #ffffff);
+}
+
+/* Main container */
+#block {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+#block:hover {
+    transform: scale(1.03);
+}
+
+/* Image styling */
+#image {
+    width: 300px;        /* constant size */
+    height: 300px;       /* fixed height */
+    object-fit: cover;   /* keeps image ratio clean */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+/* Image hover zoom */
+#image:hover {
+    transform: scale(1.05);
+}
+
+/* Text styling */
+#text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+/* When timer is low (JS sets red, we enhance it) */
+#text[style*="red"] {
+    text-shadow: 0 0 15px red, 0 0 30px red;
+}
+
+
