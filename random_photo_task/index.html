@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Professional Excuse Die 🎲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-window">
+        <!-- Left Side: Controls -->
+        <div class="sidebar">
+            <div id="dice" class="dice">🎲</div>
+            <h2>The Excuse Die</h2>
+            <p>Roll to dodge your next meeting.😉</p>
+            <button id="rollBtn" class="primary-btn">Roll for an Excuse</button>
+            <button id="mailBtn" class="secondary-btn" disabled>Draft Email</button>
+        </div>
+
+        <!-- Right Side: Live Email Preview -->
+        <div class="main-content">
+            <div class="email-mockup">
+                <div class="email-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="header-info">
+                        <p id="previewSubject"><strong>Subject:</strong> (Roll to generate)</p>
+                        <p><strong>To:</strong> My Boss / Team</p>
+                    </div>
+                </div>
+                <div class="email-body">
+                    <p id="previewText">-- Your perfectly crafted excuse will appear here --</p>
+                    <p>Best,<br><strong>[Your Name]</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

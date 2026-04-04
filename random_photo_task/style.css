@@ -1,0 +1,148 @@
+/* style.css */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 400px;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 5px; color: #4b2c20; }
+.subtitle { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+
+.dice {
+    font-size: 80px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.dice.shaking {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Email Preview Styling */
+.email-preview {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.email-header {
+    background: #eee;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.dot { height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin-right: 3px; }
+.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+
+.email-body { padding: 15px; font-size: 0.9rem; line-height: 1.4; color: #444; }
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.primary-btn { background: #764ba2; color: white; }
+.primary-btn:hover { background: #5a3682; }
+
+.secondary-btn { background: #e0e0e0; color: #666; }
+.secondary-btn:not(:disabled):hover { background: #ccc; color: #333; }
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Update these parts of your style.css */
+
+.app-window {
+    display: flex;
+    background: white;
+    width: 850px; /* Wider for horizontal look */
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* Left Sidebar */
+.sidebar {
+    flex: 1;
+    background: #f4f4f9;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.sidebar h2 { font-size: 1.4rem; margin: 10px 0; color: #333; }
+.sidebar p { font-size: 0.85rem; color: #777; margin-bottom: 25px; }
+
+/* Right Main Content */
+.main-content {
+    flex: 2;
+    background: #ffffff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.email-mockup {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-header {
+    background: #f9f9f9;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.window-dots { margin-bottom: 10px; }
+.header-info p { margin: 5px 0; font-size: 0.9rem; }
+
+.email-body {
+    padding: 25px;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Animations and Buttons stay the same as before! */
